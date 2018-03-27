@@ -1,6 +1,8 @@
 # devin-ui
 #### OverView
-该组件提供轮播图随tab切换自动切换的功能,并且可以固定部分宽度不随tab切换进行轮播。
+功能:
+ 1.提供轮播图随tab切换自动切换的功能,并且可以固定部分宽度不随tab切换进行轮播
+ 2.loading
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
