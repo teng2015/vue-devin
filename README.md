@@ -36,7 +36,7 @@ Vue.use(VueRouter)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
 
 ##### The attributes of <transition-box>(<transition-box>标签的属性)
-属性名(attribute name)|属性值(value)|类型(type)|demo
-------------|-----------
-navList|nav数据(your data of nav)|list|[{name:'name1',class:'fa fa-list-alt'}]   
+属性名(attribute name) | 属性值(value) | 类型(type) | demo
+-------- | -------------------------- | ------- | --------
+navList | nav数据(your data of nav) | array | [{name:'name1',class:'fa fa-list-alt'}]   
 
