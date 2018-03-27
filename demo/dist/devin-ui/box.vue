@@ -10,7 +10,7 @@
         box-shadow: 0 0 30px #ccc;
         background-color: #f6f7f8;
         padding-top: 50px;
-        transition: all 0.4s;
+        transition: all 0.2s;
         overflow: hidden;
     }
     .transition-box.close{
@@ -55,7 +55,7 @@
         // width: 52px;
         height: 3px;
         bottom:0px;
-        transition: all 0.4s;
+        transition: all 0.2s;
         background-color:#00dbc7;
     }
     .show_box{
@@ -64,7 +64,7 @@
         overflow: hidden;
         position: relative;
         min-height: 200px;
-        transition: all 0.4s;
+        transition: all 0.1s;
         box-sizing: border-box;
     }
     .show_box.has_fix{
@@ -77,7 +77,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        transition: all 0.4s;
+        transition: all 0.2s;
     }
     .box_item{
         width: 25%;
@@ -103,7 +103,7 @@
         top: 50px;
         width: 0px;
         height: 90px;
-        transition:all 0.6s;
+        transition:all 0.2s;
         z-index: 100;
     }
     .box-nav img.show{
@@ -150,7 +150,7 @@ export default{
     fixBox: {default: false},
     fixWidth: {default: 350},
     loadingColor: {default: 'transparent'},
-    showBoxHeight:{default:300},
+    showBoxHeight:{default:'default'},
     lineColor:{default:'#00dbc7'},
     navBc:{default:'#23233c'},
     
@@ -164,6 +164,7 @@ export default{
       isLoading: false,
       isMounted: false,
       isclose:false,
+      left:0,
     }
   },
   computed: {
@@ -186,9 +187,17 @@ export default{
       }
       return total
     },
-    left () {
-      if (!this.isMounted || !this.$refs.oitem) { return this.navIndex }
-      return this.$refs.oitem[this.navIndex].offsetWidth * this.navIndex
+    // left () {
+    //   if (!this.isMounted || !this.$refs.oitem) { return this.navIndex }
+    //     // console.log(this.$refs.oitem[this.navIndex].offsetWidth)
+    //   return this.$refs.oitem[this.navIndex].offsetWidth * this.navIndex
+    // }
+  },
+  watch:{
+    navIndex(val,oldval){
+      setTimeout(()=>{
+          this.left  = this.$refs.oitem[val].offsetWidth * this.navIndex
+      },100)
     }
   },
   methods: {
