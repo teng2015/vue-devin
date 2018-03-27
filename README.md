@@ -1,4 +1,14 @@
 # devin-ui
+#### OverView
+功能:
+ * 1.提供轮播图随tab自动切换的功能,并且可以固定部分宽度不随tab切换进行轮播
+ * 2.loading
+ ##### the block fix(固定块)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+ ##### the block not fix (不固定块)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
+##### My Application
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
 
 #### Installation
 ```
@@ -13,9 +23,8 @@ Vue.use(VueRouter)
 
 ##### 2. the usage of transition-box
 ```javascript
-        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="fullflag"
-        :banner="true" :removeClass="glyphicon glyphicon-remove" :navdisabled="false" :fixBox="true"
-        :fixWidth="400" :isremove="false" loadingColor="#f6f7f8">
+        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="true"
+        :banner="true" :showBoxHeight="400" :fixBox="true" :fixWidth="0" >
             <template slot="fix_box">
                 <div class="box" style="background-color:blue">
                 fix block
@@ -34,5 +43,39 @@ Vue.use(VueRouter)
         <button @click="prev">prev</button>
         <button @click="next">next</button>
 ```
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+
+
+##### The Attributes of transition-box(transition-box标签的属性)
+属性名(attribute name) | 属性值(value) | 类型(type) | demo
+-------- | -------------------------- | ------- | --------
+navList | 控制tab切换(your data of Tab button) | array | [{name:'name1',class:'fa fa-list-alt'}]   
+navdisabled | 是否需要允许点击tab进行切换(whether can switch throuth click the tab) |boolean | true
+isfull | 是否填满nav ( whether to fill the nav) | boolean | true
+banner | 是否需要banner (whether need banner) |boolean | true
+isremove | 是否需要remove该元素 (whether need to remove the element) |boolean | true
+removeClass | 移除按键样式(the css of btn ) |string | glyphicon glyphicon-remove
+fixBox | 是否需要固定block (whether need to fix block) |boolean | true
+fixWidth | 固定block的宽度(the width of fixed block) |boolean | true
+loadingColor | the background color of loading block |string | #f6f7f8
+
+
+##### The Event of transition-box(transition-box标签的相关事件)
+1.get the click event of nav(获取nav点击事件)
+```javascript
+<transition-box  @tap="switchNav"></transition-box>
+```
+2.previous page(上一页)
+```javascript
+this.$refs.transitionBox.up()
+```
+3.next page(下一页)
+```javascript
+this.$refs.transitionBox.next()
+```
+4.any page (任意页)
+```javascript
+this.$refs.transitionBox.selectNav(index)
+```
+
+
 
