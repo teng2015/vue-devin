@@ -1,14 +1,16 @@
 # devin-ui
 #### OverView
 功能:
- * 1.提供轮播图随tab自动切换的功能,并且可以固定部分宽度不随tab切换进行轮播
+ * 1.轮播图随tab切换自动轮播,并且可以固定部分宽度不随tab切换进行轮播
+ * 2.组件隐藏
  * 2.loading
+ ##### My Application
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
  ##### the block fix(固定块)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
  ##### the block not fix (不固定块)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
-##### My Application
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
+
 
 #### Installation
 ```
@@ -57,7 +59,8 @@ removeClass | 移除按键样式(the css of btn ) |string | glyphicon glyphicon-
 fixBox | 是否需要固定block (whether need to fix block) |boolean | true
 fixWidth | 固定block的宽度(the width of fixed block) |boolean | true
 loadingColor | the background color of loading block |string | #f6f7f8
-
+lineColor | the color of line | string | #00dbc7
+navBc | the color of nav's background | string |#23233c
 
 ##### The Event of transition-box(transition-box标签的相关事件)
 1.get the click event of nav(获取nav点击事件)
