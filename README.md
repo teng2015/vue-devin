@@ -57,7 +57,8 @@ removeClass | 移除按键样式(the css of btn ) |string | glyphicon glyphicon-
 fixBox | 是否需要固定block (whether need to fix block) |boolean | true
 fixWidth | 固定block的宽度(the width of fixed block) |boolean | true
 loadingColor | the background color of loading block |string | #f6f7f8
-
+lineColor | the color of line | string | #00dbc7
+navBc | the color of nav's background | string |#23233c
 
 ##### The Event of transition-box(transition-box标签的相关事件)
 1.get the click event of nav(获取nav点击事件)
