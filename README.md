@@ -34,3 +34,5 @@ Vue.use(VueRouter)
         <button @click="prev">prev</button>
         <button @click="next">next</button>
 ```
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+
