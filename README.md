@@ -1,9 +1,10 @@
 # devin-ui
 #### OverView
-功能:
+transition-box 功能:
  * 1.轮播图随tab切换自动轮播,并且可以固定部分宽度不随tab切换进行轮播
- * 2.组件隐藏
- * 2.loading
+ * 2.固定部分可随意显示隐藏
+ * 3.组件可隐藏
+ * 4.loading
  ##### My Application
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
  ##### the block fix(固定块)
@@ -26,7 +27,7 @@ Vue.use(VueRouter)
 ##### 2. the usage of transition-box
 ```javascript
         <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="true"
-        :banner="true" :showBoxHeight="400" :fixBox="true" :fixWidth="0" >
+        :banner="true" :showBoxHeight="400" :fixBox="true" :fixWidth="swiperIndex==1||swiperIndex==2?400:0" >
             <template slot="fix_box">
                 <div class="box" style="background-color:blue">
                 fix block
@@ -54,6 +55,7 @@ navList | 控制tab切换(your data of Tab button) | array | [{name:'name1',clas
 navdisabled | 是否需要允许点击tab进行切换(whether can switch throuth click the tab) |boolean | true
 isfull | 是否填满nav ( whether to fill the nav) | boolean | true
 banner | 是否需要banner (whether need banner) |boolean | true
+showBoxHeight | banner 容器高度 | number | default
 isremove | 是否需要remove该元素 (whether need to remove the element) |boolean | true
 removeClass | 移除按键样式(the css of btn ) |string | glyphicon glyphicon-remove
 fixBox | 是否需要固定block (whether need to fix block) |boolean | true
