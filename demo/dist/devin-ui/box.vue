@@ -10,6 +10,12 @@
         box-shadow: 0 0 30px #ccc;
         background-color: #f6f7f8;
         padding-top: 50px;
+        transition: all 0.4s;
+        overflow: hidden;
+    }
+    .transition-box.close{
+      max-height: 0;
+      padding: 0;
     }
     .transition-box  ul.box-nav{
         background-color: #23233c;
@@ -19,6 +25,7 @@
         margin-top: -50px ;
         display: flex;
         height: 50px;
+        box-sizing: border-box;
     }
     .transition-box  ul.box-nav.isremove{
         padding-right: 50px;
@@ -104,10 +111,10 @@
     }
 </style>
 <template>
-    <div :style="{width:width?width+'px':'98%',height:height?height+'px':'90%'}" class="transition-box">
+    <div :class="isclose?' close ':''" :style="{width:width?width+'px':'98%',height:height?height+'px':'90%'}" class="transition-box">
         <ul :class="isremove?'isremove':''" data-attr="8px" :style="{'background-color':navBc}" class="box-nav" id="box-nav" ref="oul">
                 <li :style="{width:isfull?liwidth:'default'}" @click="selectNav(index)" v-for="(item,index) in navList" ref="oli"  :class="(navIndex==index?'active':'')+(navdisabled?'':' navdisabled')" :key="index"><span class="box-icon" :class="item.class"></span>{{item.name}}</li>
-                <li  v-if="isremove" class="navdisabled" style="margin-right: -50px;width:50px;height:50px;"><span :class="removeClass">{{removeClass?'':'X'}}</span></li>
+                <li @click="close"  v-if="isremove" class="navdisabled" style="margin-right: -50px;width:50px;height:50px;"><span :class="removeClass">{{removeClass?'':'X'}}</span></li>
                 <span class="bottom-line" :style="{'left':moveDistance+'px','width':curLineWidth+'px','background-color':lineColor}"></span>
                 <img :style="{'background-color':loadingColor}" :class="isLoading?'show':''" src="./loading3.gif"/>
         </ul>
@@ -121,7 +128,6 @@
                     <slot :name="item.name" :row="item">
                       
                     </slot>
-                    
                 </li>
             </ul>
             </div>
@@ -147,6 +153,7 @@ export default{
     showBoxHeight:{default:300},
     lineColor:{default:'#00dbc7'},
     navBc:{default:'#23233c'},
+    
 
   },
   data () {
@@ -155,8 +162,8 @@ export default{
       navIndex: 0,
       liwidth: 0,
       isLoading: false,
-      isMounted: false
-
+      isMounted: false,
+      isclose:false,
     }
   },
   computed: {
@@ -185,27 +192,32 @@ export default{
     }
   },
   methods: {
-    selectNav (index, flag = true) {
-      if (index < 0 || index >= this.navList.length || this.navdisabled) {
-        if (!flag) {
+    selectNav (index, flag) {
+      if(index < 0 || index >= this.navList.length)
+      {
+        return
+      }
+      if ( this.navdisabled && !flag) {
           return
-        }
       }
       this.navIndex = index
       this.curLineWidth = this.$refs.oli[index].offsetWidth
       this.$emit('tap', index)
     },
     next (flag) {
-      this.selectNav(this.navIndex + 1, flag)
+      this.selectNav(this.navIndex + 1, true)
     },
     up (flag) {
-      this.selectNav(this.navIndex - 1, flag)
+      this.selectNav(this.navIndex - 1, true)
     },
     showLoading () {
       this.isLoading = true
     },
     closeLoading () {
       this.isLoading = false
+    },
+    close(){
+      this.isclose = !this.isclose
     }
   },
   mounted () {

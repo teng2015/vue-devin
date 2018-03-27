@@ -6,7 +6,7 @@ import App from './App.vue'
 
 
 import VueRouter from 'vue-router'
-import DevinUi from '../dist/devin-ui'
+import DevinUi from 'devin-ui'
 Vue.use(VueRouter)
 Vue.use(DevinUi)
 
