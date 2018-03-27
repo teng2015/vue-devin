@@ -38,5 +38,19 @@ Vue.use(VueRouter)
 ##### The attributes of <transition-box>(<transition-box>标签的属性)
 属性名(attribute name) | 属性值(value) | 类型(type) | demo
 -------- | -------------------------- | ------- | --------
-navList | nav数据(your data of nav) | array | [{name:'name1',class:'fa fa-list-alt'}]   
+navList | 控制tab切换(your data of Tab button) | array | [{name:'name1',class:'fa fa-list-alt'}]   
+navdisabled | 是否需要允许点击tab进行切换(whether can switch throuth click the tab) |boolean | true
+isfull | 是否填满nav ( whether to fill the nav) | boolean | true
+banner | 是否需要banner (whether need banner) |boolean | true
+isremove | 是否需要remove该元素 (whether need to remove the element) |boolean | true
+removeClass | 移除按键样式(the css of btn ) |string | glyphicon glyphicon-remove
+fixBox | 是否需要固定block (whether need to fix block) |boolean | true
+fixWidth | 固定block的宽度(the width of fixed block) |boolean | true
+loadingColor | the background color of loading block |string | #f6f7f8
+
+
+##### The event
+
+
+
 
