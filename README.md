@@ -1,13 +1,14 @@
 # devin-ui
+#### OverView
+该组件提供轮播图随tab切换自动切换的功能,并且可以固定部分宽度不随tab切换进行轮播。
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
 
 #### Installation
 ```
 npm install devin-ui
 ```
-#### OverView
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
 #### Usage
 ##### 1. import all components
 ```javascript
