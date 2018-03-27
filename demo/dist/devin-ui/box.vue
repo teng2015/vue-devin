@@ -105,10 +105,10 @@
 </style>
 <template>
     <div :style="{width:width?width+'px':'98%',height:height?height+'px':'90%'}" class="transition-box">
-        <ul :class="isremove?'isremove':''" data-attr="8px" class="box-nav" id="box-nav" ref="oul">
+        <ul :class="isremove?'isremove':''" data-attr="8px" :style="{'background-color':navBc}" class="box-nav" id="box-nav" ref="oul">
                 <li :style="{width:isfull?liwidth:'default'}" @click="selectNav(index)" v-for="(item,index) in navList" ref="oli"  :class="(navIndex==index?'active':'')+(navdisabled?'':' navdisabled')" :key="index"><span class="box-icon" :class="item.class"></span>{{item.name}}</li>
                 <li  v-if="isremove" class="navdisabled" style="margin-right: -50px;width:50px;height:50px;"><span :class="removeClass">{{removeClass?'':'X'}}</span></li>
-                <span class="bottom-line" :style="{'left':moveDistance+'px','width':curLineWidth+'px'}"></span>
+                <span class="bottom-line" :style="{'left':moveDistance+'px','width':curLineWidth+'px','background-color':lineColor}"></span>
                 <img :style="{'background-color':loadingColor}" :class="isLoading?'show':''" src="./loading3.gif"/>
         </ul>
         <div v-if="banner" class="show_box" :class="fixBox?'has_fix':''" :style="{'padding-left':fixBox?fixWidth+'px':0,'height':showBoxHeight+'px'}">
@@ -145,6 +145,8 @@ export default{
     fixWidth: {default: 350},
     loadingColor: {default: 'transparent'},
     showBoxHeight:{default:300},
+    lineColor:{default:'#00dbc7'},
+    navBc:{default:'#23233c'},
 
   },
   data () {
