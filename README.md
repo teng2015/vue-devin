@@ -3,9 +3,9 @@
 功能:
  * 1.提供轮播图随tab自动切换的功能,并且可以固定部分宽度不随tab切换进行轮播
  * 2.loading
- ##### the block fix
+ ##### the block fix(固定块)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
- ##### the block not fix
+ ##### the block not fix (不固定块)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
 ##### My Application
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
