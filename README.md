@@ -4,6 +4,10 @@
 ```
 npm install devin-ui
 ```
+#### OverView
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
 #### Usage
 ##### 1. import all components
 ```javascript
@@ -33,7 +37,7 @@ Vue.use(VueRouter)
         <button @click="prev">prev</button>
         <button @click="next">next</button>
 ```
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+
 
 ##### The Attributes of transition-box(transition-box标签的属性)
 属性名(attribute name) | 属性值(value) | 类型(type) | demo
