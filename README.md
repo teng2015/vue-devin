@@ -13,9 +13,8 @@ Vue.use(VueRouter)
 
 ##### 2. the usage of transition-box
 ```javascript
-        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="fullflag"
-        :banner="true" :removeClass="glyphicon glyphicon-remove" :navdisabled="false" :fixBox="true"
-        :fixWidth="400" :isremove="false" loadingColor="#f6f7f8">
+        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="true"
+        :banner="true" :showBoxHeight="400" :fixBox="true" :fixWidth="0" >
             <template slot="fix_box">
                 <div class="box" style="background-color:blue">
                 fix block
@@ -35,4 +34,9 @@ Vue.use(VueRouter)
         <button @click="next">next</button>
 ```
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+
+##### The attributes of <transition-box>(<transition-box>标签的属性)
+属性名(attribute name)|属性值(value)|类型(type)|demo
+------------|-----------
+navList|nav数据(your data of nav)|list|[{name:'name1',class:'fa fa-list-alt'}]   
 
