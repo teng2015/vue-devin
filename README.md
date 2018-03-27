@@ -54,6 +54,7 @@ navList | 控制tab切换(your data of Tab button) | array | [{name:'name1',clas
 navdisabled | 是否需要允许点击tab进行切换(whether can switch throuth click the tab) |boolean | true
 isfull | 是否填满nav ( whether to fill the nav) | boolean | true
 banner | 是否需要banner (whether need banner) |boolean | true
+showBoxHeight | banner 容器高度 | number | default
 isremove | 是否需要remove该元素 (whether need to remove the element) |boolean | true
 removeClass | 移除按键样式(the css of btn ) |string | glyphicon glyphicon-remove
 fixBox | 是否需要固定block (whether need to fix block) |boolean | true
