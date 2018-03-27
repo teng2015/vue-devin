@@ -20,7 +20,7 @@ export default {
     return {
       menu:require('./menu.js'),
       msg: 'Welcome to Use Devin-Ui',
-      decs:'if you like it,please stared me,Thank you!'
+      decs:'Please starred me if you like it. Many thanks!',
     }
   }
 }
