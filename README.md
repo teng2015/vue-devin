@@ -35,7 +35,7 @@ Vue.use(VueRouter)
 ```
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
 
-##### The attributes of <transition-box>(<transition-box>标签的属性)
+##### The Attributes of transition-box(transition-box标签的属性)
 属性名(attribute name) | 属性值(value) | 类型(type) | demo
 -------- | -------------------------- | ------- | --------
 navList | 控制tab切换(your data of Tab button) | array | [{name:'name1',class:'fa fa-list-alt'}]   
@@ -49,8 +49,23 @@ fixWidth | 固定block的宽度(the width of fixed block) |boolean | true
 loadingColor | the background color of loading block |string | #f6f7f8
 
 
-##### The event
-
+##### The Event of transition-box(transition-box标签的相关事件)
+1.get the click event of nav(获取nav点击事件)
+```javascript
+<transition-box  @tap="switchNav"></transition-box>
+```
+2.previous page(上一页)
+```javascript
+this.$refs.transitionBox.up()
+```
+3.next page(下一页)
+```javascript
+this.$refs.transitionBox.next()
+```
+4.any page (任意页)
+```javascript
+this.$refs.transitionBox.selectNav(index)
+```
 
 
 
