@@ -8,6 +8,7 @@
       <li v-for="item in menu"><router-link :to="item.name">{{item.name}}</router-link></li>
       
     </ul>
+    <h4>{{suggestion}}</h4>
     <router-view></router-view>
   </div>
 </template>
@@ -21,6 +22,7 @@ export default {
       menu:require('./menu.js'),
       msg: 'Welcome to Use Devin-Ui',
       decs:'Please starred me if you like it. Many thanks!',
+      suggestion:'If you have some ideas,Welcome to present!'
     }
   }
 }
