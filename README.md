@@ -13,7 +13,9 @@ Vue.use(VueRouter)
 
 ##### 2. the usage of transition-box
 ```javascript
-        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="fullflag" :banner="true" :removeClass="glyphicon glyphicon-remove" :navdisabled="false" :fixBox="true" :fixWidth="400" :isremove="false" loadingColor="#f6f7f8">
+        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="fullflag"
+        :banner="true" :removeClass="glyphicon glyphicon-remove" :navdisabled="false" :fixBox="true"
+        :fixWidth="400" :isremove="false" loadingColor="#f6f7f8">
             <template slot="fix_box">
                 <div class="box" style="background-color:blue">
                 fix block
