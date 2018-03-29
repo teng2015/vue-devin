@@ -175,7 +175,7 @@ export default{
       return this.navList.length * 100 + '%'
     },
     box_item_width () {
-      return Math.floor(100 / this.navList.length) + '%'
+      return 100 / this.navList.length + '%'
       // if (!this.isMounted || !this.$refs.main_boxs_fa) { return this.isMounted }
       // return this.main_box_width / this.navList.length + 'px'
     },
@@ -197,7 +197,7 @@ export default{
     navIndex(val,oldval){
       setTimeout(()=>{
           this.left  = this.$refs.oitem[val].offsetWidth * this.navIndex
-      },100)
+      },150)
     }
   },
   methods: {

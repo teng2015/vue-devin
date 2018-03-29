@@ -49,9 +49,6 @@
               }, {
                 name: '数据矫正',
                 class: 'fa fa-download'
-              }, {
-                name: '生成报告',
-                class: 'fa fa-file-excel'
               }],
               swiperIndex:0
             }
