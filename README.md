@@ -9,8 +9,9 @@ transition-box 功能:
  * 2.固定部分可随意显示隐藏
  * 3.组件可隐藏
  * 4.loading
- ##### My Application
+ ##### demo1
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4.gif?raw=true)
+ ##### demo2
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
  ##### the block fix(固定块)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
