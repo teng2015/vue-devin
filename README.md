@@ -11,6 +11,7 @@ transition-box 功能:
  * 4.loading
  ##### My Application
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box3.gif?raw=true)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4.gif?raw=true)
  ##### the block fix(固定块)
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
  ##### the block not fix (不固定块)
