@@ -1,4 +1,8 @@
 # devin-ui
+#### Installation
+```
+npm install devin-ui
+```
 #### OverView
 transition-box 功能:
  * 1.轮播图随tab切换自动轮播,并且可以固定部分宽度不随tab切换进行轮播(banner可禁用)
@@ -13,10 +17,7 @@ transition-box 功能:
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
 
 
-#### Installation
-```
-npm install devin-ui
-```
+
 #### Usage
 ##### 1. import all components
 ```javascript
