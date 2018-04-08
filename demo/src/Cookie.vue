@@ -39,7 +39,7 @@
         },
         mounted(){
             // this.cookieObj = this.$devin.ck.newCookie(this.cookieName)
-            this.cookieObj = new this.$devin.ck(this.cookieName)
+            this.cookieObj = new this.$devin.Ck(this.cookieName)
             
         }
     }
