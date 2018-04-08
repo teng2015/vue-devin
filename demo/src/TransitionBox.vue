@@ -13,7 +13,7 @@
 </style>
 <template>
     <div class="root">
-        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="true" :banner="true" :showBoxHeight="400" :fixBox="true" :fixWidth="swiperIndex==0?400:0" isremove="true" removeClass="fa fa-times" >
+        <transition-box ref="transitionBox" :navList='navList' @tap="switchNav" :isfull="true" :banner="true" :showBoxHeight="400" :fixBox="true" :fixWidth="400" isremove="true" removeClass="fa fa-times" >
             <template slot="fix_box">
                 <div class="box" style="background-color:blue">
                 fix block
@@ -71,6 +71,6 @@
                 this.$refs.transitionBox.next()
             },
 
-        }
+        },
     }
 </script>

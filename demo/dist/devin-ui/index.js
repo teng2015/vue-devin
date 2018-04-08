@@ -1,5 +1,6 @@
 
-import box from './box'
+import box from './transition-box/box'
+import ck from './function-cookie/es6/cookie'
 
 // import eventbus from './eventbus'
 
@@ -10,6 +11,9 @@ var main = {
     }
     this.installed = true
     Vue.component('transition-box', box)
+    Vue.prototype.$devin = {
+        'ck':ck
+    }
   }
 
 }
