@@ -9,12 +9,7 @@ npm install devin-ui
  * 2.固定部分可随意显示隐藏
  * 3.组件可隐藏
  * 4.loading
- ##### demo
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4.gif?raw=true)
- ##### the block fix(固定块)
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
- ##### the block not fix (不固定块)
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
+
 
 ### cookie 管理功能:
 ```javascript
@@ -37,6 +32,14 @@ npm install devin-ui
             
         }
 ```
+
+ ##### demo
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4.gif?raw=true)
+ ##### the block fix(固定块)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box1.gif?raw=true)
+ ##### the block not fix (不固定块)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box2.gif?raw=true)
+
 
 
 
