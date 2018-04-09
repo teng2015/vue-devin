@@ -1,6 +1,6 @@
 {
   "name": "demo",
-  "description": "the demo of devin-ui",
+  "description": "the demo of vue-devin",
   "version": "1.0.0",
   "author": "devinup@163.com",
   "license": "MIT",
@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "devin-ui": "^1.0.4",
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-devin": "^1.1.2"
   },
   "browserslist": [
     "> 1%",

@@ -6,9 +6,11 @@ import App from './App.vue'
 
 
 import VueRouter from 'vue-router'
-import DevinUi from '../dist/vue-devin'
+// import vueDevin from '../dist/vue-devin'
+import vueDevin from 'vue-devin'
+
 Vue.use(VueRouter)
-Vue.use(DevinUi)
+Vue.use(vueDevin)
 
 var menu= require('./menu.js')
 
