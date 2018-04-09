@@ -1,7 +1,7 @@
-# devin-ui
+# vue-devin
 ## Installation
 ```
-npm install devin-ui
+npm install vue-devin
 ```
 ## OverView 【基于vue的组件库】
 ### transition-box 功能:
