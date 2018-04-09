@@ -5,6 +5,7 @@
         <h3>Essential Links</h3>
 
     <ul>
+      <li><a target="_blank" href="https://github.com/Rise-Devin/vue-devin">GitHub</a></li>
       <li v-for="item in menu"><router-link :to="item.name">{{item.name}}</router-link></li>
       
     </ul>
@@ -20,7 +21,7 @@ export default {
   data () {
     return {
       menu:require('./menu.js'),
-      msg: 'Welcome to Use Devin-Ui',
+      msg: 'Welcome to Use vue-devin',
       decs:'Please starred me if you like it. Many thanks!',
       suggestion:'If you have some ideas,Welcome to present!'
     }

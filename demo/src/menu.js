@@ -3,6 +3,7 @@ var TransitionBox = require('./TransitionBox.vue').default
 var Cookie = require('./Cookie.vue').default
 
 var menu=[
+
     {
         path:'/home',
         name:'Home',
