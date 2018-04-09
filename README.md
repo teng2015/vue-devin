@@ -4,7 +4,7 @@
 npm install vue-devin
 ```
 ## OverView 【基于vue的组件库】
-### [transition-box 功能](https://github.com/Rise-Devin/vue-devin/blob/master/demo/dist/vue-devin/transition-box/README.md):
+### [transition-box](https://github.com/Rise-Devin/vue-devin/blob/master/demo/dist/vue-devin/transition-box/README.md) 功能:
  * 1.轮播图随tab切换自动轮播,并且可以固定部分宽度不随tab切换进行轮播(banner可禁用)
  * 2.固定部分可随意显示隐藏
  * 3.组件可隐藏
@@ -13,7 +13,7 @@ npm install vue-devin
 ![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4.gif?raw=true)
 
 
-### cookie 管理功能:
+### [cookie](https://github.com/Rise-Devin/vue-devin/blob/master/demo/dist/vue-devin/function-cookie/README.md) 管理功能:
 ```javascript
         methods:{
             set(){
