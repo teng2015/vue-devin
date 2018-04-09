@@ -12,7 +12,7 @@ var main = {
     this.installed = true
     Vue.component('transition-box', box)
     Vue.prototype.$devin = {
-        'ck':ck
+        'Ck':ck
     }
   }
 

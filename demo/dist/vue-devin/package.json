@@ -1,6 +1,6 @@
 {
-  "name": "devin-ui",
-  "version": "1.1.0",
+  "name": "vue-devin",
+  "version": "1.1.2",
   "description": "a  slider  based on vue",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rise-Devin/devin-ui.git"
+    "url": "git+https://github.com/Rise-Devin/vue-devin.git"
   },
   "keywords": [
-    "devin-ui"
+    "vue-devin"
   ],
   "dependencies": {
     "vue": "^2.5.11"
@@ -19,7 +19,7 @@
   "author": "Devin Deng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Rise-Devin/devin-ui/issues"
+    "url": "https://github.com/Rise-Devin/vue-devin/issues"
   },
-  "homepage": "https://github.com/Rise-Devin/devin-ui#readme"
+  "homepage": "https://github.com/Rise-Devin/vue-devin#readme"
 }
