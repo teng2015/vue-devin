@@ -4,7 +4,7 @@
 npm install vue-devin
 ```
 ## OverView 【基于vue的组件库】
-### transition-box 功能:
+### [transition-box 功能](https://github.com/Rise-Devin/vue-devin/blob/master/demo/dist/vue-devin/transition-box/README.md):
  * 1.轮播图随tab切换自动轮播,并且可以固定部分宽度不随tab切换进行轮播(banner可禁用)
  * 2.固定部分可随意显示隐藏
  * 3.组件可隐藏
