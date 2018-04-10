@@ -69,5 +69,13 @@ this.$refs.transitionBox.next()
 ```javascript
 this.$refs.transitionBox.selectNav(index)
 ```
+5.show loading
+```
+this.$refs.transitionBox.showLoading()
+```
+6.close loading
+```
+this.$refs.transitionBox.closeLoading()
+```
 
 
