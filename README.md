@@ -10,7 +10,7 @@ npm install vue-devin
  * 3.组件可隐藏
  * 4.loading
  ##### demo
-![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4.gif?raw=true)
+![](https://github.com/Rise-Devin/devin-ui/blob/master/demo/assets/box4x.gif?raw=true)
 
 
 ### [cookie](https://github.com/Rise-Devin/vue-devin/blob/master/demo/dist/vue-devin/function-cookie/README.md) 管理:
